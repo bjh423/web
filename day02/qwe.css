@@ -1,0 +1,88 @@
+      a {
+        text-decoration: none;
+      }
+      li {
+        width: 70px;
+        height: 20px;
+        list-style: none;
+        float: left;
+        padding: 15px;
+      }
+      a:hover {
+        background: red;
+      }
+      li:last-child {
+        border-radius: 0 50px 50px 0;
+      }
+      li:first-child {
+        border-radius: 50px 0 0 50px;
+      }
+      li:nth-child(2n) {
+        background: orange;
+      }
+      li:nth-child(2n + 1) {
+        background: yellow;
+      }
+      #center {
+        width: 800px;
+        height: 280px;
+        background: beige;
+      }
+      #top2 {
+        border: 20px dotted red;
+        box-shadow: 10px 10px yellow;
+        background: black;
+        color: yellow;
+        border-radius: 100px 10px;
+        width: 250px;
+        height: 100px;
+        position: fixed;
+        top: 5px;
+        right: 5px;
+      }
+      #total {
+        width: 800px;
+        height: 1000px;
+        background: lightcyan;
+      }
+      body {
+        background: pink;
+      }
+      div {
+        font-size: 15px;
+        font-weight: bold;
+        color: blue;
+      }
+      #top {
+        width: 800px;
+        height: 50px;
+        background: lime;
+      }
+
+      td {
+        text-align: center;
+        width: 100px;
+        height: 40px;
+      }
+      img{
+        width: 150px;
+        height: 150px;
+      }
+      #qwe{
+        width: 100px;
+        height: 100px;
+      }
+
+      textarea{
+        background: aqua;
+      }
+
+      #find{
+        background: black;
+        color: white;
+      }
+
+      .login{
+        background: blue;
+        border-color: lime;
+      }

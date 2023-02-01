@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        body {
+            color: gray;
+        }
+
+        a:hover {
+            background: greenyellow;
+            color: blue;
+            text-decoration: line-through;
+        }
+        
+        button {
+            background-color: aquamarine;
+            color: gray;
+        }
+
+        button:hover {
+            border: 0px;
+            background-color: gray;
+            color: aquamarine;
+        }
+
+        img {
+            border: 10px solid black;
+        }
+
+        img[src $= png] {
+            border: 10px solid red;
+        }
+        img[src $= jpg] {
+            border: 10px solid lime;
+        }
+        /*이미지 기본 검정, png 빨강, jpg 라임*/
+
+        #d1 >p
+        {
+            background-color: blue;
+        }
+
+        #d2 p{
+            background-color: silver;
+        }
+
+        #d1{
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+        #d2{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="http://www.naver.com">네이버로</a>
+    <a href="http://www.daum.net">다음으로</a><br>
+    <button>나의 즐겨찾기로</button>
+    <button>나의 메모장으로</button>
+    <img src="1.jpg" alt="">
+    <img src="001(1).png" alt="">
+    <hr>
+    <div id="d1">
+        <p>치킨</p>
+        <div id="d11">
+            <p>피자</p>
+            <P>햄버거</P>
+        </div>
+    </div>
+    <div id="d2">
+        <p>조개</p>
+        <div id="d21">
+            <p>토마토</p>
+            <P>오이</P>
+        </div>
+    </div>
+</body>
+</html>

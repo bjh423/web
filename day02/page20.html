@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="qwe.css">
+  </head>
+  <body>
+    <div id="total">
+      <div id="top">
+        <ul>
+          <li>
+            <a href="page20.html">회원가입</a>
+          </li>
+          <li>
+            <a href="page10.html">작품정보</a>
+          </li>
+          <li>
+            <a href="page30.html">게시판</a>
+          </li>
+          <li>
+            <a href="page40.html">최근 본 작품</a>
+          </li>
+        </ul>
+      </div>
+      <div id="top2">고정된 화면 보이는 부분..최근 본 작품..</div>
+      <div id="center">
+
+        <form action="보내는 서버 주소">
+          <h3>검색할 단어를 입력하세요.</h3>
+          <hr>
+          검색할 단어 <input type="text" name="find" id="find">
+          <button>검색 시작</button>
+        </form>
+
+        <form action="보내는 서버 주소">
+          <h3>로그인 화면</h3>
+          <hr>
+          <table>
+            <tr>
+              <td>아이디</td>
+              <td><input type="text" name="idid"></td>
+            </tr>
+            <tr>
+              <td>비밀번호</td>
+              <td><input type="password" name="psps"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><button>로그인</button></td>
+            </tr>
+          </table>
+        </form>
+
+        <form action="보내는 서버 주소">
+          <h3>회원가입 화면</h3>
+          <hr>
+          <table>
+            <tr>
+              <td>가입할 ID</td>
+              <td><input type="text" name="idid"></td>
+            </tr>
+            <tr>
+              <td>사용할 비밀번호</td>
+              <td><input type="text" name="psps"></td>
+            </tr>
+            <tr>
+              <td>가입할 이름</td>
+              <td><input type="text" name="name" placeholder="성과 이름을 순서대로 붙여쓰세요"></td>
+            </tr>
+            <tr>
+              <td>성별</td>
+              <td>남성<input type="radio" name="gen">여성<input type="radio" name="gen"></td>
+            </tr>
+            <tr>
+              <td>취미</td>
+              <td>게임<input type="checkbox" name="hob">음악<input type="checkbox" name="hob">등산<input type="checkbox" name="hob"><br>
+              운동<input type="checkbox" name="hob">독서<input type="checkbox" name="hob">기타<input type="checkbox" name="hob"></td>
+            </tr>
+            <tr>
+              <td>전화번호</td>
+              <td>통신사
+                <select>
+                  <option>SKT</option>
+                  <option>LGT</option>
+                  <option>KT</option>
+                </select>
+                <input type="number" placeholder="-를 제외하고 쓰세요">
+              </td>
+            </tr>
+            <tr>
+              <td>생년월일</td>
+              <td><input type="date"></td>
+            </tr>
+            <tr>
+              <td>가입한 시기</td>
+              <td><input type="datetime">가입한주<input type="datetime-local"></td>
+            </tr><tr>
+              <td>하고싶은 말</td>
+              <td><textarea cols="30" rows="10" placeholder="100글자 내외로 작성하세요"></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2"><button>회원가입 처리 요청</button></td>
+            </tr>
+          </table>
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>
