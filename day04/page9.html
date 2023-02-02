@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="out.js"></script>
+    <script>
+        function hi() {
+            alert("끼 얏 호 우");
+        }
+        function bye() {
+            alert("ㅂ 2 ㅂ 2");
+        }
+        function check() {
+            id = "root"
+            pw = "1234"
+            id2 = document.getElementById('id2').value
+            pw2 = document.getElementById('pswd').value
+
+            result = document.getElementById('result')
+            if (id == id2 && pw == pw2) {
+                result.innerHTML = "<font color=black>로그인 성공</font> <img src='ok.jpg' width=100px height=100px>"
+            }
+            else {
+                result.innerHTML = "<font color=red>로그인 실패</font> <img src='fail.jpg' width=100px height=100px>"
+            }
+
+
+            /*if(id==id2 && pw == pw2){
+                alert("로그인 성공")
+            }
+            else{
+                alert("로그인 실패")
+            }*/
+        }
+        function num_check() {
+            if (document.getElementById('id2').value.length < 5) {
+                alert("5글자 이상 필요")
+            }
+            else {
+                alert("사용 가능 아이디")
+            }
+        }
+
+        function check_pw(){
+            pswd = document.getElementById('pswd').value
+            pswd2 = document.getElementById('pswd2').value
+            if (pswd == pswd2) {
+                result.innerHTML = "<font color=black>일치</font> <img src='ok.jpg' width=100px height=100px>"
+            }
+            else {
+                result.innerHTML = "<font color=red>불일치</font> <img src='fail.jpg' width=100px height=100px>"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="hi()">끼얏호우</button><br>
+    <button onclick="bye()">바이바이</button>
+    <hr color="red">
+    아이디 : <input type="text" id="id2"> <button onclick="num_check()">글자수체크</button> <Br>
+    패스워드1 : <input type="text" id="pswd"> <br>
+    패스워드2 : <input type="text" id="pswd2"> <br>
+    <button onclick="check_pw()">pw동일여부 체크</button>
+
+    <div id="result">
+
+    </div>
+</body>
+
+</html>
