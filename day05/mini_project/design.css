@@ -1,0 +1,13 @@
+li{
+    color: darkgreen;
+    font-size: 24px;
+}
+button{
+    color:bisque;
+    background-color: black;
+    border-radius: 5px;
+}
+td{
+    background-color: palevioletred;
+    border: 5px;
+}

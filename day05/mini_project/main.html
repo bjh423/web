@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini project</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="design.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        function table() {
+            location.href = "table.html"
+        }
+
+
+        function move() {
+            url = document.getElementById("find").value
+            //alert(url)
+            qwe = "http://" + url
+            location.href = qwe
+        }
+        $(function () {
+            $(".widget input[type=submit], .widget a, .widget button").button();
+            $("button, input, a").on("click", function (event) {
+                event.preventDefault();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li>
+            table 페이지로 <button onclick="table()">페이지 이동버튼</button><br><br>
+        </li>
+        <li>
+            <a href="http://www.naver.com">네이버</a>
+        </li>
+        <li>
+            <form>
+                <hr>
+                이동할 주소 입력<br>
+                <input type="text" name="find" id="find" placeholder="http:// 제외하고 입력">
+                <input type="button" value="사이트 이동용 버튼" onclick="move()">
+            </form>
+            <br><br>
+        </li>
+        <li>
+            <input class="ui-button ui-widget ui-corner-all" type="submit" value="그냥 버튼">
+        </li>
+    </ul>
+</body>
+
+</html>

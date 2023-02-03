@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tour(){
+            space = document.getElementById("space").value
+            month = document.getElementById("month").value
+            choice = document.getElementById("choice").value
+            
+
+            if (choice == 1) {
+                cost = 30000
+                how = "비행기"
+            } else if (choice == 2) {
+                cost = 10000
+                how = "버스"
+            } else {
+                cost = 50000
+                how = "자가용"
+            }
+
+            text = "나는 " + month + "월에 " + space + "으로 " + how + "를 타고 여행을 갈거에요. 비용은 " + cost + "원"
+            document.getElementById('result').innerHTML = text
+        }
+    </script>
+</head>
+<body>
+    여행지 : <input type='text' value="부산" id="space"><br>
+    여행 월 : <input type='text' value="10000" id="month"><br>
+    여행 수단 : 1)비행기, 2)버스, 3)자가용
+    <input type='text' value="1" id="choice"><br>
+    <button onclick="tour()">여행 계획 버튼</button>
+    <div id="result">
+        
+    </div>
+</body>
+</html>
